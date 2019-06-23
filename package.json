@@ -1,6 +1,6 @@
 {
   "name": "gsx-pdf-optimize",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Optimize PDFs with Ghostscript command",
   "main": "index.js",
   "bin": {
@@ -18,8 +18,7 @@
     "execa": "^1.0.0",
     "minimist": "^1.2.0"
   },
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "scripts": {
     "test": "node test.js"
   },
