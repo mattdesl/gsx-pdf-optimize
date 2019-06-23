@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Optimize PDFs with Ghostscript command",
   "main": "index.js",
+  "bin": {
+    "gsx-pdf-optimize": "./index.js"
+  },
   "license": "MIT",
   "author": {
     "name": "Matt DesLauriers",

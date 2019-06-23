@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const execa = require('execa');
 const minimist = require('minimist');
 const path = require('path');
