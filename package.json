@@ -1,0 +1,38 @@
+{
+  "name": "gsx-pdf-optimize",
+  "version": "1.0.0",
+  "description": "Optimize PDFs with Ghostscript command",
+  "main": "index.js",
+  "license": "MIT",
+  "author": {
+    "name": "Matt DesLauriers",
+    "email": "dave.des@gmail.com",
+    "url": "https://github.com/mattdesl"
+  },
+  "dependencies": {
+    "dateformat": "^3.0.3",
+    "execa": "^1.0.0",
+    "minimist": "^1.2.0"
+  },
+  "devDependencies": {
+    "mkdirp": "^0.5.1"
+  },
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "pdf",
+    "optimize",
+    "gs",
+    "gsx",
+    "ghostscript"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/mattdesl/gsx-pdf-optimize.git"
+  },
+  "homepage": "https://github.com/mattdesl/gsx-pdf-optimize",
+  "bugs": {
+    "url": "https://github.com/mattdesl/gsx-pdf-optimize/issues"
+  }
+}
