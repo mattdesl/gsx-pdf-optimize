@@ -41,7 +41,7 @@ GSX_OPTIMIZE_COMMAND=gs gsx-pdf-optimize input.pdf output.pdf
 
 ## Raw Command
 
-Below is the raw command if you'd like to optimize it further yourself:
+Below is the raw command if you'd like to optimize it further yourself. Credit goes to @lkraider and [this gist](https://gist.github.com/lkraider/f0888da30bc352f9d167dfa4f4fc8213).
 
 ```sh
 gsx -sDEVICE=pdfwrite \
