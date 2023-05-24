@@ -14,11 +14,10 @@
   },
   "dependencies": {
     "dateformat": "^3.0.3",
-    "mkdirp": "^0.5.1",
-    "execa": "^1.0.0",
-    "minimist": "^1.2.0"
+    "execa": "^7.1.1",
+    "minimist": "^1.2.0",
+    "mkdirp": "^0.5.1"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "node test.js"
   },

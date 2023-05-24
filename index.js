@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-const execa = require("execa");
+const exec = require("child_process").exec;
 const minimist = require("minimist");
 const path = require("path");
 const fs = require("fs");
@@ -13,7 +13,7 @@ module.exports.spawn = spawn;
 
 function spawn(opt = {}) {
   const [command, args] = build(opt);
-  return execa(command, args);
+  return exec(command, args, opt);
 }
 
 async function optimize(opt = {}) {
@@ -64,8 +64,19 @@ async function optimize(opt = {}) {
     console.log(`${command} ${args.join(" ")}`);
   }
 
-  return execa(command, args, {
-    stdio: "inherit",
+  const str = [command, ...args].join(" ");
+  return new Promise((resolve, reject) => {
+    exec(
+      str,
+      {
+        stdio: "inherit",
+      },
+      (err, stdout, stderr) => {
+        console.log("RECEIVED", err, stdout, stderr);
+        if (err) reject(err);
+        else resolve({ stdout, stderr });
+      }
+    );
   });
 }
 
