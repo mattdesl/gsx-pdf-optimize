@@ -72,7 +72,6 @@ async function optimize(opt = {}) {
         stdio: "inherit",
       },
       (err, stdout, stderr) => {
-        console.log("RECEIVED", err, stdout, stderr);
         if (err) reject(err);
         else resolve({ stdout, stderr });
       }
